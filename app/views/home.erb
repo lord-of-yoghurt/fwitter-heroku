@@ -1,0 +1,16 @@
+<div class="container">
+  <% @tweets.each do |tweet| %>
+    <div class="row">
+      <div class="col-xs-4 col-sm-6 col-lg-6 tweetcol rounded">
+        <p class="tweet-content"><%= tweet.content %></p>
+        <p class="posted-by">Posted by <a href="/users/<%= tweet.user.slug %>"><%= tweet.user.username %></a> on <%= tweet.created_at.strftime("%m/%d/%Y at %l:%M %p") %>   
+        <% if admin? %>
+          <form id="deltweet" name="deltweet" action="/tweets/<%= tweet.id %>" method="POST">
+            <input type="hidden" id="hidden" name="_method" value="delete">
+            [<input class="del_button" type="submit" value="Delete">]
+          </form>
+        <% end %></p>
+      </div>
+    </div><!-- div-row -->
+  <% end %>
+</div>

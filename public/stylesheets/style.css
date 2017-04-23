@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background: url("/img/triangular/triangular.png") repeat;
+  background-attachment: fixed;
+}
+
+label.tweet {
+  display: block;
+  padding-bottom: 10px;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.del_button {
+  background: none; 
+  border-width: 0px; 
+  color: #56556D; 
+  text-decoration: none;
+}
+
+.tweetcol {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: url("/img/knitting250px/knitting250px.png");
+}
+
+.centercol {
+  float: none;
+  margin: 0 auto;
+}
+
+.new {
+  background: url("/img/sativa/sativa.png");
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.logo {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 1.5em;
+}
+
+.error-message {
+  padding-bottom: 20px;
+}
+
+.errorcol {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.login {
+  background: url("/img/knitting250px/knitting250px.png");
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.greeting {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tweet-content {
+  font-family: 'Josefin Slab', serif;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.3em;
+}
+
+.posted-by {
+  font-family: 'Josefin Slab', serif;
+  font-size: 0.95em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #eee;
+}

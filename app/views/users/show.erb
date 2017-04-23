@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row text-center greeting">
+    <h3><%= @user.username %>'s tweets</h3>
+  </div>
+
+  <% @user.tweets.each do |tweet| %>      
+    <div class="row">
+      <div class="col-xs-4 col-sm-6 col-lg-6 tweetcol rounded">
+        <p class="tweet-content"><%= tweet.content %></p>
+        <p class="posted-by">Posted on <%= tweet.created_at.strftime("%m/%d/%Y at %I:%M %p") %>
+        <% if tweet.user_id == session[:user_id] %>
+          | <a href="/tweets/<%= tweet.id %>/edit">Edit</a>
+        <% end %>
+        </p>
+      </div>
+    </div>      
+  <% end %>
+
+</div>
