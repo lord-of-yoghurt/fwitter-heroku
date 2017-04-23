@@ -1,0 +1,25 @@
+development:
+ adapter: postgresql
+ encoding: unicode
+ database: fwitter_dev
+ host: localhost
+ username: loy_fwitter
+ password: loy_fwitter
+
+test:
+ adapter: postgresql
+ encoding: unicode
+ database: fwitter_test
+ pool: 5
+ host: localhost
+ username: loy_fwitter
+ password: loy_fwitter
+
+production:
+ adapter: postgresql
+ encoding: unicode
+ database: fwitter_dev
+ pool: 5
+ host: localhost
+ username: loy_fwitter
+ password: loy_fwitter
