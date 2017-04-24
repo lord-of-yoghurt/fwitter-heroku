@@ -43,6 +43,13 @@ label.tweet {
   border-radius: 5px;
 }
 
+.no-tweets {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background: url("/img/knitting250px/knitting250px.png");
+}
+
 .logo {
   font-family: 'Expletus Sans', cursive;
   font-size: 1.5em;

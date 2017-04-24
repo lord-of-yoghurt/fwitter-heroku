@@ -5,7 +5,9 @@
   </div>
 
   <% if @user.tweets.empty? %>
-    <p class="greeting">No tweets yet! <a href="/tweets/new">Make a new tweet</a></p>
+    <div class="col-xs-4 centercol text-center no-tweets">
+      <p class="greeting">No tweets yet! <a href="/tweets/new">Make a new tweet</a></p>
+    </div>
   <% else %>
     <% @user.tweets.each do |tweet| %>      
       <div class="row">
