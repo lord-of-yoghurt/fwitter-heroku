@@ -20,6 +20,11 @@ label.tweet {
   text-decoration: none;
 }
 
+.del {
+  text-align: left;
+  padding: 5px;
+}
+
 .tweetcol {
   float: none;
   margin: 0 auto;

@@ -1,17 +1,17 @@
-<div class="container">
+<div class="container-fluid">
 
   <div class="row">
     <h3 class="text-center greeting">My tweets</h3>
   </div>
 
   <% if @user.tweets.empty? %>
-    <div class="col-xs-4 centercol text-center no-tweets">
+    <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 centercol text-center no-tweets">
       <p class="greeting">No tweets yet! <a href="/tweets/new">Make a new tweet</a></p>
     </div>
   <% else %>
     <% @user.tweets.each do |tweet| %>      
-      <div class="row">
-        <div class="col-xs-4 col-sm-6 col-lg-6 tweetcol rounded">
+      <div class="row-fluid">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 tweetcol rounded">
           <p class="tweet-content"><%= tweet.content %></p>
           <p class="posted-by">Posted on <%= tweet.created_at.strftime("%m/%d/%Y at %I:%M %p") %>
           <% if tweet.user_id == session[:user_id] %>
