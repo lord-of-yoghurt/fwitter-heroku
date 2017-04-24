@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <% @tweets.each do |tweet| %>
+  <% @tweets.reverse.each do |tweet| %>
     <div class="row-fluid">
       <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 tweetcol rounded">
         <p class="tweet-content"><%= tweet.content %></p>
