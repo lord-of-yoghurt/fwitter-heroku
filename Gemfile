@@ -10,7 +10,6 @@ gem 'pg'
 gem 'bcrypt'
 
 group :test do
-  gem 'pry'
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
